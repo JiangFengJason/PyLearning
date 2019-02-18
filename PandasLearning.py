@@ -23,6 +23,7 @@ print (df2.sort_index(axis=1,ascending=False))
 
 df3 = pd.DataFrame(np.arange(24).reshape((6,4)),index=dates,columns=['A','B','C','D'])
 print (df3)
+
 #print (df3.loc['20190220']) #用标签来选择数据
 #print (df3.iloc[3]) #用位置来选择数据，第三行
 #print (df3.ix[:3,['A','C']]) #弃用了
@@ -64,3 +65,4 @@ data2 = data2.cumsum()
 ax = data2.plot.scatter(x='A',y='B',color='Blue',label='Class1')
 data2.plot.scatter(x='A',y='C',color='Green',label='Class2',ax=ax)
 plt.show()
+
